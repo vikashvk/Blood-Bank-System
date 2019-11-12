@@ -1,0 +1,10 @@
+div{
+    text-align: center;
+}
+.image{
+    height:35em;
+    background-size:cover;
+    width:94;
+    height:94;
+    background-image:url('https://cdn.crunchify.com/bg.png');
+}

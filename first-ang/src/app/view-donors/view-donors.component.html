@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Donors List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Donors Name</th>
+            <th>Donors Num</th>
+            <th>Email Id</th>
+            <th>Blood Group</th>
+            
+            <!-- <th>Actions</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let donor of donors | async">
+            <td>{{donor.name}}</td>
+            <td>{{donor.phNum}}</td>
+            <td>{{donor.eMail}}</td>
+            <td>{{donor.bloodGroup}}</td>
+            <!-- <td><button (click)="deletedonor(donor.id)" class="btn btn-danger">Delete</button>
+                <button (click)="updatedonor(donor.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="donorDetails(donor.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  

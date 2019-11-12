@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>
+                Operations for {{title}} !<br> <br>
+            </h1>
+        <ul class="rolldown-list">
+                <li><a routerLink="patientList" (click)="viewPatient()" routerLinkActive="active"><b> view</b></a></li>
+                <li> <a routerLink="add" routerLinkActive="active"><b>add</b> </a></li>
+                <li><a routerLink="donors" routerLinkActive="active"><b>Donors List</b> </a></li>
+            </ul>
+</body>
+</html>
