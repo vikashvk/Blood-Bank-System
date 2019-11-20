@@ -10,7 +10,6 @@ import { Observable } from 'rxjs';
   styleUrls: ['./all-donors.component.css']
 })
 export class AllDonorsComponent implements OnInit {
-
   donors: Observable<Donor[]>;
   constructor(private router: Router, private adminService: AdminService) { }
 
@@ -20,4 +19,14 @@ export class AllDonorsComponent implements OnInit {
   reloadData() {
     this.donors = this.adminService.getAllDonors();
   }
+  deleteDonor(eMail: string) {
+    this.adminService.deleteDonor(eMail)
+      .subscribe(
+        data => {
+          console.log(data);
+          this.reloadData();
+        },
+        error => console.log(error));
+  }
+
 }

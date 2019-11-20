@@ -20,4 +20,13 @@ export class ViewPatientsComponent implements OnInit {
     debugger
     this.patients = this.adminService.getPatientsList();
   }
+   deletePatient(patientId: string) {
+      this.adminService.deletePatient(patientId)
+        .subscribe(
+          data => {
+            console.log(data);
+            this.reloadData();
+          },
+          error => console.log(error));
+    }
 }

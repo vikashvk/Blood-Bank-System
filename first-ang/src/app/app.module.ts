@@ -13,6 +13,8 @@ import { AddPatientComponent } from './add-patient/add-patient.component';
 import { ViewPatientsComponent } from './view-patients/view-patients.component';
 import { ViewDonorsComponent } from './view-donors/view-donors.component';
 import { AllDonorsComponent } from './all-donors/all-donors.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 // const routes: Routes = [
 //   { path: '', pathMatch: 'full', redirectTo: '/login' },
@@ -20,7 +22,7 @@ import { AllDonorsComponent } from './all-donors/all-donors.component';
 //   { path: 'menu', component: MenuComponent}
 // ];
 @NgModule({
-  declarations: [LoginComponent, AppComponent, MenuComponent, AddPatientComponent, ViewPatientsComponent, ViewDonorsComponent, AllDonorsComponent],
+  declarations: [LoginComponent, AppComponent, MenuComponent, AddPatientComponent, ViewPatientsComponent, ViewDonorsComponent, AllDonorsComponent, FooterComponent, HeaderComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,

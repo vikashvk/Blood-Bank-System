@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Patient } from '../model/patient';
 import { AdminService } from '../admin.service';
 import { HospitalLocation } from '../model/hospital-location';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-add-patient',
@@ -14,9 +15,18 @@ export class AddPatientComponent implements OnInit {
   hospitalLocation: HospitalLocation = new HospitalLocation();
   submitted = false;
   bloodGroup: string;
+  // addForm: FormGroup;
+
   constructor(private router: Router, private adminService: AdminService) { }
 
   ngOnInit() {
+    // this.addForm = this.formBuilder.group({
+    //   patientId: ['', Validators.required],
+    //   patientName: ['', Validators.required],
+    //   emailId: ['', Validators.required],
+    //   bloodGroup: ['', Validators.required],
+    //   phoneNum: ['', Validators.required]
+    // });
   }
 
   newPatient(): void {
@@ -33,6 +43,10 @@ export class AddPatientComponent implements OnInit {
   }
 
   onSubmit() {
+    // if (this.addForm.invalid == true) {
+    //   console.log('invalid');
+    //   return;
+    // }
     this.submitted = true;
     this.save();
   }

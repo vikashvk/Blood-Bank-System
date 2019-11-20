@@ -1,6 +1,6 @@
 <div class="panel panel-primary">
         <div class="panel-heading">
-          <h2>Donors List</h2>
+          <h2 >Donors List</h2>
         </div>
         <div class="panel-body">
           <table class="table table-striped">
@@ -10,7 +10,7 @@
                 <th><h6>Donors Number</h6></th>
                 <th><h6>Email Id</h6></th>
                 <th><h6>Blood Group</h6></th>
-                
+                <th><h6>Operations</h6></th>   
                 <!-- <th>Actions</th> -->
               </tr>
               
@@ -21,14 +21,16 @@
                 <td>{{donor.phNum}}</td>
                 <td>{{donor.eMail}}</td>
                 <td>{{donor.bloodGroup}}</td>
-                <!-- <td><button (click)="deletedonor(donor.id)" class="btn btn-danger">Delete</button>
-                    <button (click)="updatedonor(donor.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
-                    <button (click)="donorDetails(donor.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
-                </td> -->
+                <td><button (click)="deleteDonor(donor.eMail)" class="btn btn-danger">Delete</button>
+                    <!-- <button (click)="updatedonor(donor.id)" class="btn btn-info" style="margin-left: 10%">Update</button> -->
+        
+                </td>
               </tr>
             </tbody>
           </table>
-        </div>
       </div>
-      
+        
+      </div>
+      <app-footer class="footer"></app-footer>
+     
       

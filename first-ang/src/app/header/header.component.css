@@ -1,0 +1,11 @@
+div{
+    text-align: center;
+    text-decoration-color: darkgray;
+}
+.image{
+    background-size:cover;
+    height: 70px;
+    background-position-y: 149px;
+    /* background-repeat: no-repeat; */
+    /* background-image:url('src\assets\images\heaader.jpg'); */
+}

@@ -1,0 +1,10 @@
+div{
+    text-align: center;
+    text-decoration-color: darkgray;
+}
+.image{
+    background-size:cover;
+    height: 100px;
+    background-position-y: bottom;
+    background-image:url('src\assets\images\foooter.png');
+}

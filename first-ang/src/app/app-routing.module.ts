@@ -14,7 +14,8 @@ const routes: Routes = [
   { path: 'menu/add', component: AddPatientComponent},
   { path: 'menu/patientList', component: ViewPatientsComponent},
   { path: 'donorsList/:bloodGroup', component: ViewDonorsComponent},
-  { path: 'menu/donors', component: AllDonorsComponent}
+  { path: 'menu/donors', component: AllDonorsComponent},
+  { path: 'donors/:eMail', component: AllDonorsComponent}
 ];
 @NgModule({
   declarations: [],

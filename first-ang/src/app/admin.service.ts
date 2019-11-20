@@ -31,5 +31,10 @@ export class AdminService {
   getAllDonors(): Observable<any> {
     return this.http.get(`${this.baseUrl}` + '/donors');
   }
-
+  deleteDonor(eMail: any): Observable<any> {
+    return this.http.delete(`${this.baseUrl}` + '/donors/' + `${eMail}`, { responseType : 'text'});
+  }
+  deletePatient(patientId: any): Observable<any>{
+    return this.http.delete(`${this.baseUrl}` + '/patientList/' + `${patientId}`, { responseType : 'text'});
+  }
 }
