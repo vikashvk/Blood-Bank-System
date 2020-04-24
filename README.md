@@ -34,15 +34,15 @@ Software Used for this Project :
 Demo :
 Web Application
 1. Welcome Page
-2. Wrong Credentials Login:
+2. Wrong Credentials Login
 3. Admin Functionalities
-3.1 List of all Patients
-3.2 Add Patient Details
-3.2.1 List of donors having same blood group as Patients
-3.3 List of All Donors
+ 3.1 List of all Patients
+ 3.2 Add Patient Details
+  3.2.1 List of donors having same blood group as Patients
+ 3.3 List of All Donors
 4. Logout
 
- 
+
 Android Application
 1. Splash Activity
 2. Login Page for Donor
