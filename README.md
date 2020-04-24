@@ -1,9 +1,13 @@
-#OBJECTIVE - The Main Objective of this System is to design an Android Application to maintain considerable information of the Donors and a Web Application for Patients, report details for any bloodrelated organization.
+# Blood Bank System
 
-#SCOPE AND LIMITATIONS -In the proposed management system the admin can add patient and donor can register himself to volunteer blood donation. Further we can add sort option for donor on the basis of different parameters. Special status to those patients who were once a donor.Donor can be navigated to the Patient’s location for blood donation
+# OBJECTIVE
+The Main Objective of this System is to design an Android Application to maintain considerable information of the Donors and a Web Application for Patients, report details for any bloodrelated organization.
+
+# SCOPE AND LIMITATIONS
+In the proposed management system the admin can add patient and donor can register himself to volunteer blood donation. Further we can add sort option for donor on the basis of different parameters. Special status to those patients who were once a donor.Donor can be navigated to the Patient’s location for blood donation
 
 
-#REQUIREMENT ANALYSIS
+# REQUIREMENT ANALYSIS
 Technologies will be used :
 • Java 8
 • Spring Boot
@@ -19,7 +23,7 @@ Technologies will be used :
 • POSTMAN (RESTApi)
 
 
-#Software Used for this Project :
+# Software Used for this Project
 • STS-4
 • Android Studio 3.5
 • POSTMAN
@@ -27,7 +31,7 @@ Technologies will be used :
 • Android Emulator
 
 
-#Demo :
+# Demo
 Web Application
 1. Welcome Page
 2. Wrong Credentials Login
@@ -39,7 +43,7 @@ Web Application
 4. Logout
 
 
-#Android Application
+# Android Application
 1. Splash Activity
 2. Login Page for Donor
 3. Registration Page for Donor
